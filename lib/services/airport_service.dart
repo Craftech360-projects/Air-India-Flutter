@@ -40,13 +40,25 @@ class AirportService {
             code: "ZRH",
             connections: ["DEL"],
           ),
+          Airport(
+            name: "Tel Aviv",
+            code: "TLV",
+            connections: ["DEL"],
+          ),
         ];
       case "UK":
         return [
           Airport(
             name: "Birmingham",
             code: "BHX",
-            connections: ["DEL"],
+            connections: ["DEL", "ATQ"],
+          ),
+          Airport(
+            name: "London",
+            code: "",
+            connections: [],
+            isSubheading: true,
+            subheadingStyle: "uk",
           ),
           Airport(
             name: "Heathrow",
@@ -56,7 +68,7 @@ class AirportService {
           Airport(
             name: "Gatwick",
             code: "LGW",
-            connections: ["DEL", "BOM", "BLR"],
+            connections: ["ATQ", "AMD", "GOX"],
           ),
         ];
       case "North America":
@@ -64,22 +76,22 @@ class AirportService {
           Airport(
             name: "Chicago",
             code: "ORD",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL"],
           ),
           Airport(
             name: "Newark",
-            code: "ORD",
-            connections: ["DEL"],
+            code: "EWR",
+            connections: ["DEL", "BOM"],
           ),
           Airport(
             name: "New York",
             code: "JFK",
-            connections: ["DEL", "BLR"],
+            connections: ["DEL", "BOM"],
           ),
           Airport(
             name: "San Francisco",
             code: "SFO",
-            connections: ["DEL"],
+            connections: ["DEL", "BOM", "BLR"],
           ),
           Airport(
             name: "Toronto",
@@ -115,12 +127,12 @@ class AirportService {
           Airport(
             name: "Mauritius",
             code: "MRU",
-            connections: ["DEL"],
+            connections: ["BOM"],
           ),
           Airport(
             name: "Nairobi",
             code: "NBO",
-            connections: ["BOM"],
+            connections: ["DEL"],
           ),
         ];
       case "Middle East":
@@ -128,22 +140,22 @@ class AirportService {
           Airport(
             name: "Abu Dhabi",
             code: "AUH",
-            connections: ["DEL", "BOM", "COK"],
+            connections: ["BOM"],
           ),
           Airport(
             name: "Dammam",
             code: "DMM",
-            connections: ["DEL", "BOM", "HYD"],
+            connections: ["BOM"],
           ),
           Airport(
             name: "Doha",
             code: "DOH",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL", "BOM", "COK"],
           ),
           Airport(
             name: "Dubai",
             code: "DXB",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL", "BOM", "COK", "HYD", "MAA"],
           ),
           Airport(
             name: "Jeddah",
@@ -151,18 +163,8 @@ class AirportService {
             connections: ["DEL", "BOM"],
           ),
           Airport(
-            name: "Muscat",
-            code: "DOH",
-            connections: ["DEL", "BOM"],
-          ),
-          Airport(
             name: "Riyadh",
             code: "RUH",
-            connections: ["DEL", "BOM"],
-          ),
-          Airport(
-            name: "Tel Aviv",
-            code: "TLV",
             connections: ["DEL", "BOM"],
           ),
         ];
@@ -171,37 +173,44 @@ class AirportService {
           Airport(
             name: "Bali",
             code: "DPS",
-            connections: ["DEL", "BOM", "COK"],
+            connections: ["DEL"],
           ),
           Airport(
             name: "Bangkok",
             code: "BKK",
-            connections: ["DEL", "BOM", "HYD"],
+            connections: ["DEL", "BOM"],
           ),
           Airport(
             name: "Ho Chi Minh City",
             code: "SGN",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL"],
           ),
           Airport(
             name: "Kuala Lumpur",
             code: "KUL",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL"],
           ),
           Airport(
             name: "Phuket",
             code: "HKT",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL"],
           ),
           Airport(
             name: "Singapore",
             code: "SIN",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL", "BOM", "BLR", "MAA", "PNQ"],
+          ),
+          Airport(
+            name: "Indian Subcontinent",
+            code: "",
+            connections: [],
+            isSubheading: true,
+            subheadingStyle: "sea",
           ),
           Airport(
             name: "Colombo",
             code: "CMB",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL", "BOM", "MAA"],
           ),
           Airport(
             name: "Dhaka",
@@ -211,7 +220,7 @@ class AirportService {
           Airport(
             name: "Kathmandu",
             code: "KTM",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL"],
           ),
           Airport(
             name: "Malé",
@@ -221,7 +230,7 @@ class AirportService {
           Airport(
             name: "Yangon",
             code: "RGN",
-            connections: ["DEL", "BOM"],
+            connections: ["DEL"],
           ),
         ];
       case "Far East":
@@ -237,8 +246,8 @@ class AirportService {
             connections: ["DEL"],
           ),
           Airport(
-            name: "Tokyo",
-            code: "NRT",
+            name: "Haneda",
+            code: "HND",
             connections: ["DEL"],
           ),
         ];

@@ -1,6 +1,6 @@
 name: air_india
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  video_player: ^2.7.0
+  chewie: ^1.7.0
 
 dev_dependencies:
   flutter_test:
@@ -19,8 +21,12 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/fonts/
     - assets/images/
+    - assets/fonts/
+    - assets/videos/a320/
+    - assets/videos/a350/
+    - assets/videos/b787/
+    - assets/videos/brand_videos/
     - assets/svgs/
     - assets/animations/
 
@@ -28,12 +34,12 @@ flutter:
     - family: AirIndia
       fonts:
         - asset: assets/fonts/AirIndiaVariable.ttf
-          
+
     - family: GothamNarrow
       fonts:
         - asset: assets/fonts/GothamNarrow-Black.otf
           weight: 900
-          
+
     - family: Nunito
       fonts:
         - asset: assets/fonts/Nunito-ExtraLight.ttf

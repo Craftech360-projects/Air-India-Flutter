@@ -49,46 +49,46 @@ class ContinentAirportList extends StatelessWidget {
     switch (continentName) {
       case "Europe":
         return Position(
-          top: MediaQuery.of(context).size.height * 0.046 + 20, // 10px down
-          left: MediaQuery.of(context).size.width * 0.297,
+          top: MediaQuery.of(context).size.height * 0.046 + 25, // 10px down
+          left: MediaQuery.of(context).size.width * 0.298,
         );
       case "UK":
         return Position(
-          top: MediaQuery.of(context).size.height * 0.353 + 20, // 10px down
+          top: MediaQuery.of(context).size.height * 0.353 + 30, // 10px down
           left: MediaQuery.of(context).size.width * 0.106,
         );
       case "North America":
         return Position(
           bottom:
-              MediaQuery.of(context).size.height * 0.407 - 230, // 100px down
+              MediaQuery.of(context).size.height * 0.407 - 200, // 100px down
           left: MediaQuery.of(context).size.width * 0.095,
         );
       case "Middle East":
         return Position(
           bottom:
-              MediaQuery.of(context).size.height * 0.284 - 260, // 100px down
+              MediaQuery.of(context).size.height * 0.284 - 175, // 100px down
           left: MediaQuery.of(context).size.width * 0.308,
         );
       case "Africa":
         return Position(
-          bottom: MediaQuery.of(context).size.height * 0.1 - 70, // 50px down
-          right: MediaQuery.of(context).size.width * 0.296,
+          bottom: MediaQuery.of(context).size.height * 0.1 - 65, // 50px down
+          right: MediaQuery.of(context).size.width * 0.255,
         );
       case "Australia":
         return Position(
-          bottom: MediaQuery.of(context).size.height * 0.105 - 70, // 50px down
-          right: MediaQuery.of(context).size.width * 0.137,
+          bottom: MediaQuery.of(context).size.height * 0.105 - 65, // 50px down
+          right: MediaQuery.of(context).size.width * 0.096,
         );
       case "South East Asia":
         return Position(
           bottom:
-              MediaQuery.of(context).size.height * 0.476 - 360, // 100px down
-          right: MediaQuery.of(context).size.width * 0.108,
+              MediaQuery.of(context).size.height * 0.476 - 342, // 100px down
+          right: MediaQuery.of(context).size.width * 0.0655,
         );
       case "Far East":
         return Position(
           top: MediaQuery.of(context).size.height * 0.223 + 25, // 100px down
-          right: MediaQuery.of(context).size.width * 0.042,
+          right: MediaQuery.of(context).size.width * 0.0,
         );
       default:
         // Default position if continent is not recognized

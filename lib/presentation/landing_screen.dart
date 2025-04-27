@@ -46,7 +46,7 @@ class LandingScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 250),
                 InkWell(
-                  onTap: () => Navigator.pushNamed(context, '/home'),
+                  onTap: () => Navigator.pushNamed(context, '/contents'),
                   child: Center(
                     child: SizedBox(
                       height: 56,

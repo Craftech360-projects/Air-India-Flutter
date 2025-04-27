@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen>
     super.initState();
     _animationController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 600),
+      duration: const Duration(milliseconds: 800),
     );
     _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(parent: _animationController, curve: Curves.easeInOut),
@@ -79,6 +79,17 @@ class _HomeScreenState extends State<HomeScreen>
                 });
               },
             ),
+          Positioned(
+            bottom: 40,
+            right: 40,
+            child: InkWell(
+              onTap: () => Navigator.pop(context),
+              child: Image.asset(
+                AppImages.backBtn,
+                width: 240,
+              ),
+            ),
+          )
         ],
       ),
     );

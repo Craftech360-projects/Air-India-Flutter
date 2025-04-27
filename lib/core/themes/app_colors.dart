@@ -7,6 +7,10 @@ class AppColors {
   static const Color blue = Color(0xFF0F9FFF); // Bright blue
   static const Color darkBlue = Color(0xFF2C60F0); // Darker blue
   static const Color boxColor = Color(0xFFFABAAC);
+  static const Color goldButton = Color(0xFFEBBE69);
+  static const Color darkViolet = Color(0xFF531251);
+  static const Color gradient1 = Color(0xFF981838);
+  static const Color gradient2 = Color(0xFFCB3D61);
 
   // Neutrals
   static const Color white = Colors.white;
