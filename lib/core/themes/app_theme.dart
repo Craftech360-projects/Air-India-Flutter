@@ -56,14 +56,6 @@ class AppTheme {
       ),
     ),
 
-    // Card Theme
-    cardTheme: CardTheme(
-      elevation: 2,
-      shape: RoundedRectangleBorder(
-        borderRadius: Constants.br12,
-      ),
-    ),
-
     // Notification Theme
     snackBarTheme: const SnackBarThemeData(closeIconColor: AppColors.white),
 
@@ -181,14 +173,6 @@ class AppTheme {
           color: AppColors.black,
         ),
         shape: RoundedRectangleBorder(borderRadius: Constants.br12),
-      ),
-    ),
-
-    // Card Theme
-    cardTheme: CardTheme(
-      elevation: 2,
-      shape: RoundedRectangleBorder(
-        borderRadius: Constants.br12,
       ),
     ),
 

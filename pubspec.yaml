@@ -23,12 +23,7 @@ flutter:
   assets:
     - assets/images/
     - assets/fonts/
-    - assets/videos/a320/
-    - assets/videos/a350/
-    - assets/videos/b787/
-    - assets/videos/brand_videos/
-    - assets/svgs/
-    - assets/animations/
+    - assets/videos/
 
   fonts:
     - family: AirIndia

@@ -3,6 +3,7 @@ import 'dart:io' show Platform;
 import 'package:air_india/core/assets/app_images.dart';
 import 'package:air_india/core/themes/app_colors.dart';
 import 'package:chewie/chewie.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
@@ -33,6 +34,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   }
 
   String _normalizeVideoPath(String path) {
+    // Web uses forward slashes and doesn't support Platform.isWindows check safely
+    if (kIsWeb) return path;
+
     // Normalize path separators based on platform
     if (Platform.isWindows) {
       return path.replaceAll('/', '\\');
